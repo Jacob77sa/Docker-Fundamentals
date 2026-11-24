@@ -38,7 +38,7 @@ docker run -it --name my-ubuntu ubuntu bash
 ```bash
 apt update
 apt install curl -y
-curl [https://google.com](https://google.com)
+curl https://google.com
 ```
 `apt update` პაკეტების სიას ანახლებს, `apt install curl -y` აინსტალირებს curl-ს, `curl https://google.com` კი ამოწმებს ინტერნეტთან წვდომას (პასუხად google-ის გადამისამართების გვერდი ბრუნდება).
 
@@ -169,8 +169,3 @@ exit
 
 ---
 
-## დასკვნა
-
-- **კონტეინერი** იმიჯიდან გაშვებული იზოლირებული პროცესია.
-- **იმიჯი** აპლიკაციისა და გარემოს შაბლონია (Dockerfile-იდან ვაგებთ).
-- **Volume** მონაცემებს კონტეინერის სიცოცხლისგან დამოუკიდებლად ინახავს.
